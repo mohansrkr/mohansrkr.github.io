@@ -2,99 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to My Personal Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome | Groundwater & Isotope Hydrology</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f0f0;
-      color: #333;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #033e3e;
       text-align: center;
-      padding-top: 60px;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      padding: 100px 20px 40px;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Groundwater_flow.svg/1920px-Groundwater_flow.svg.png') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-color: rgba(255, 255, 255, 0.85);
     }
 
     h1 {
-      color: #007acc;
-      font-size: 3.5rem;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-top: 10px;
+      font-size: 3.2rem;
+      color: #00796b;
     }
 
     .intro {
-      margin-top: 30px;
-      font-size: 1.5rem;
-      color: #555;
-    }
-
-    .profile-img {
-      border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      font-size: 1.4rem;
       margin-top: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 40px;
-      padding: 12px 25px;
-      background: #007acc;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-
-    .btn:hover {
-      background: #005fa3;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     nav {
-      margin-top: 30px;
+      margin-top: 40px;
     }
 
     nav a {
-      color: #007acc;
-      margin: 0 15px;
       text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      margin: 0 15px;
       font-size: 1.1rem;
+      padding: 8px 12px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      transition: 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      background-color: #00796b;
+      color: white;
     }
 
-    footer {
-      margin-top: 50px;
+    .wave {
+      position: relative;
+      height: 100px;
+      background: #b2ebf2;
+    }
+
+    .wave::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      left: 0;
+      width: 200%;
+      height: 100px;
+      background: url('https://i.imgur.com/ax9X3Wl.png') repeat-x;
+      animation: waveAnim 6s linear infinite;
+    }
+
+    @keyframes waveAnim {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .footer {
+      margin-top: 40px;
       font-size: 0.9rem;
-      color: #777;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <!-- Profile Picture -->
-  <img src="your-profile-photo.jpg" alt="Your Name" class="profile-img" />
-
-  <h1>Hi, I'm [Your Name]!</h1>
-
-  <p class="intro">I am a [Your Role: Developer, Researcher, Student, etc.] based in [Your Location].</p>
-
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a> |
-    <a href="education.html">Education</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="gallery.html">Gallery</a> |
+  <div class="hero">
+    <h1>Welcome!</h1>
+    <p class="intro">
+      I’m [Your Name], a researcher in <strong>Groundwater & Isotope Hydrology</strong>.
+      This site showcases my work, projects, and publications in the field of water science.
+    </p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="publications.html">Publications</a>
+      <a href="education.html">Education</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="research.html">Research</a>
     </nav>
+  </div>
 
-  <a href="https://github.com/your-username" target="_blank" class="btn">Visit My GitHub</a>
+  <div class="wave"></div>
 
-  <footer>
-    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-  </footer>
+  <div class="footer">
+    <p>&copy; 2025 [Your Name] | Groundwater & Isotope Hydrology</p>
+  </div>
 </body>
 </html>
