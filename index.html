@@ -1,19 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Personal Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Personal Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    h1 {
+      color: #007acc;
+      font-size: 3.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .intro {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #555;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 25px;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background: #005fa3;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: #007acc;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>Hello, I'm [Mohan Sarkar]</p>
+  <!-- Profile Picture -->
+  <img src="your-profile-photo.jpg" alt="Your Name" class="profile-img" />
+
+  <h1>Hi, I'm [Your Name]!</h1>
+
+  <p class="intro">I am a [Your Role: Developer, Researcher, Student, etc.] based in [Your Location].</p>
 
   <nav>
     <a href="index.html">Home</a> |
-    <a href="research.html">Research</a> |
+    <a href="research.html">Research</a>
     <a href="publications.html">Publications</a> |
     <a href="education.html">Education</a> |
     <a href="projects.html">Projects</a> |
-    <a href="gallery.html">Gallery</a>
-  </nav>
+    <a href="gallery.html">Gallery</a> |
+    </nav>
+
+  <a href="https://github.com/your-username" target="_blank" class="btn">Visit My GitHub</a>
+
+  <footer>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  </footer>
 </body>
 </html>
