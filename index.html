@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4fefc;
-      color: #003c3c;
+      background-color: white;
+      color: black;
     }
 
     header {
@@ -83,6 +83,26 @@
       text-decoration: none;
       color: #00796b;
     }
+
+    /* Section for the photo and caption */
+    .photo-section {
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    .photo-section img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      border: 5px solid #00796b;
+    }
+
+    .photo-caption {
+      font-size: 1rem;
+      color: #00796b;
+      margin-top: 10px;
+    }
   </style>
 </head>
 
@@ -105,6 +125,12 @@
     <a href="gallery.html">Gallery</a>
     <a href="research.html">Research</a>
   </nav>
+
+  <!-- Photo Section -->
+  <div class="photo-section">
+    <img src="your-photo.jpg" alt="Mohan Sarkar">
+    <div class="photo-caption">Mohan Sarkar - Groundwater and Isotope Hydrology Researcher</div>
+  </div>
 
   <footer>
     &copy; 2025 Mohan Sarkar | All rights reserved. | <a href="contact.html">Contact</a>
