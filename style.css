@@ -1,3 +1,39 @@
+/* Basic Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #111;
+}
+
+/* Top Nav */
+.top-nav {
+  padding: 20px 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.top-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+}
+
+.top-nav li a.active,
+.top-nav li a:hover {
+  color: #00796b;
+}
+
 /* Hero Section */
 .hero {
   display: flex;
@@ -40,4 +76,26 @@
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+
+/* Footer */
+.footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 0.95rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
 
