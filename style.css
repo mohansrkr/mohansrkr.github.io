@@ -37,7 +37,7 @@ body {
 /* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;  /* Centers the content horizontally */
   align-items: center;
   padding: 80px 60px;
   flex-wrap: wrap;
@@ -47,6 +47,7 @@ body {
 .hero-text {
   flex: 1;
   max-width: 600px;
+  text-align: center; /* Centers the text inside this div */
 }
 
 .hero-text h1 {
@@ -62,16 +63,17 @@ body {
 }
 
 .hero-image {
-  flex: 1;
-  max-width: 400px;
+  max-width: 300px; /* You can adjust this size as needed */
+  margin-right: 30px; /* Add space between the image and text */
 }
 
 .hero-image img {
-  width: 250px;  /* Increased image size */
-  height: 250px; /* Adjusted to maintain the square aspect ratio */
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 
 
