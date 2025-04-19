@@ -1,20 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>My Research</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Mohan Sarkar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: black;
+    }
+
+    header {
+      background-color: #00796b;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 10px 20px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      border: 2px solid #00796b;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00796b;
+      color: white;
+    }
+
+    .research-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .research-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    .research-content li {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #e0f2f1;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Research</h1>
+
+  <header>
+    <h1>Research</h1>
+    <p>Groundwater & Isotope Hydrology</p>
+  </header>
 
   <nav>
-    <a href="index.html">Home</a> |
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
     <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a> |
-    <a href="education.html">Education</a> |
-    <a href="projects.html">Projects</a> |
-    <a href="gallery.html">Gallery</a> |
   </nav>
 
-  <p>Here you can describe your ongoing and past research, interests, collaborations, and more.</p>
+  <section id="research">
+    <div class="research-content">
+      <p>
+        My research focuses on understanding the complex interactions between climate change, groundwater systems, and hydrological processes through the lens of environmental isotopes.
+      </p>
+
+      <ul>
+        <li><strong>Isotope Hydrology:</strong> Using stable isotopes (δ<sup>18</sup>O, δ<sup>2</sup>H) to trace groundwater recharge sources and residence time.</li>
+        <li><strong>Groundwater Sustainability:</strong> Assessing recharge dynamics and aquifer vulnerability under changing climate scenarios.</li>
+        <li><strong>Climate Impact Studies:</strong> Investigating the long-term impact of precipitation variability and temperature rise on groundwater levels.</li>
+        <li><strong>Modeling Approaches:</strong> Combining geostatistical models and isotope data to improve water resource predictions.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Mohan Sarkar | All rights reserved.
+  </footer>
+
 </body>
+
 </html>
