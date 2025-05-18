@@ -1,100 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Navigation Bar */
-        .top-nav {
-            padding: 10px 40px;
-            background-color: #fff;
-            box-shadow: 0 2px 6px var(--shadow-color);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications | Mohan Sarkar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: black;
+    }
 
-        .top-nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            padding: 0;
-            margin: 0;
-        }
+    header {
+      background-color: #00796b;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
 
-        .top-nav li a {
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 500;
-            font-size: 1.1rem;
-        }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
 
-        .top-nav li a.active,
-        .top-nav li a:hover {
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 2px;
-        }
-    </style>
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      margin: 10px 20px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      border: 2px solid #00796b;
+      padding: 10px 20px;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00796b;
+      color: white;
+    }
+
+    .publication-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .publication-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 20px;
+    }
+
+    .publication-content li {
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      background-color: #e0f2f1;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- Top Navigation -->
-<div class="top-nav">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="biography.html">Biography</a></li>
-        <li><a href="research.html">Research</a></li>
-        <li><a href="publications.html" class="active">Publications</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
+  <header>
+    <h1>Publications</h1>
+    <p>Selected Publications on Groundwater & Isotope Hydrology</p>
+  </header>
 
-<!-- Hero Section -->
-<div class="hero">
-    <div class="hero-text">
-        <h1>My Publications</h1>
-        <p>Explore my research contributions and published work.</p>
-    </div>
-</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="education.html">Education</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="publications.html">Publications</a>
+  </nav>
 
-<!-- Publications Section -->
-<div class="section-row">
-    <div class="section-block">
-        <img src="images/publication1.jpg" alt="Publication Image">
-        <h3>Title of Publication 1</h3>
-        <p>Author(s): John Doe, Jane Smith</p>
-        <p>Journal: Environmental Science Journal</p>
-        <p>Year: 2023</p>
-        <a href="link-to-publication-1.pdf" target="_blank">Read More</a>
+  <section id="publications">
+    <div class="publication-content">
+      <ul>
+        <li><strong>Sarkar, M.</strong>, et al. (2025). "Isotopic Tracing of Groundwater Recharge in Semi-Arid Regions," *Journal of Hydrology*, 587, 125045.</li>
+        <li><strong>Sarkar, M.</strong>, et al. (2024). "Impact of Climate Change on Groundwater Sustainability," *Water Resources Research*, 60(4), 1080-1095.</li>
+        <li><strong>Sarkar, M.</strong>, et al. (2023). "Application of Geostatistical Models in Isotope Hydrology," *Environmental Earth Sciences*, 82(7), 341.</li>
+        <li><strong>Sarkar, M.</strong>, et al. (2022). "Long-term Variability in Groundwater Levels in Response to Climate Extremes," *Science of the Total Environment*, 805, 150236.</li>
+      </ul>
     </div>
-    
-    <div class="section-block">
-        <img src="images/publication2.jpg" alt="Publication Image">
-        <h3>Title of Publication 2</h3>
-        <p>Author(s): John Doe, Alex Johnson</p>
-        <p>Journal: Water Resources Research</p>
-        <p>Year: 2024</p>
-        <a href="link-to-publication-2.pdf" target="_blank">Read More</a>
-    </div>
+  </section>
 
-    <div class="section-block">
-        <img src="images/publication3.jpg" alt="Publication Image">
-        <h3>Title of Publication 3</h3>
-        <p>Author(s): John Doe, Sarah Lee</p>
-        <p>Journal: Climate Change and Environment</p>
-        <p>Year: 2025</p>
-        <a href="link-to-publication-3.pdf" target="_blank">Read More</a>
-    </div>
-</div>
-
-<!-- Footer -->
-<div class="footer">
-    <p>&copy; 2025 John Doe. All rights reserved.</p>
-</div>
+  <footer>
+    &copy; 2025 Mohan Sarkar | All rights reserved.
+  </footer>
 
 </body>
+
 </html>
